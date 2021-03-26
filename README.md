@@ -1,8 +1,8 @@
-# RSA JS
+# RSA Light
 
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/wonism/rsa-js/test-release/main)
-![npm](https://img.shields.io/npm/v/rsa-js)
-![npm bundle size](https://img.shields.io/bundlephobia/min/rsa-js)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/wonism/rsa-light/test-release/main)
+![npm](https://img.shields.io/npm/v/rsa-light)
+![npm bundle size](https://img.shields.io/bundlephobia/min/rsa-light)
 
 RSA library that works on browser and node without any dependencies.
 
@@ -10,15 +10,15 @@ RSA library that works on browser and node without any dependencies.
 
 ```sh
 # npm
-$ npm i -S rsa-js
+$ npm i -S rsa-light
 # yarn
-$ yarn add rsa-js
+$ yarn add rsa-light
 ```
 ## Usage
 
 ```ts
 // without signature
-import RSA from 'rsa-js';
+import RSA from 'rsa-light';
 
 const rsaKey = RSA.generateRSAKey(512);
 const publicKeyString = RSA.publicKeyString(rsaKey);
@@ -32,7 +32,7 @@ console.log(decryptionResult.signature);
 
 ```ts
 // with signature
-import RSA from 'rsa-js';
+import RSA from 'rsa-light';
 
 const rsaKey = RSA.generateRSAKey(512);
 const publicKeyString = RSA.publicKeyString(rsaKey);
